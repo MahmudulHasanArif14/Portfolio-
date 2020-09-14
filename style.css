@@ -1,78 +1,90 @@
 html{
-
   margin:0;
-
   padding:0;
-
   box-sizing:border-box;
-
   
-
 }
-
 /*REUSEABLE COMPONENTS*/
 
 .font-12 {
-
   font-size: 12px;
-
 }
 
 .font-14 {
-
   font-size: 14px;
-
 }
 
 .font-16 {
-
   font-size: 16px;
-
 }
-
-.font-20 {
-
-  font-size: 20px;
-
+.font-18{
+   font-size:18px;
   font-family:'Lobster', cursive;
-
 }
-
+.font-20 {
+  font-size: 20px;
+  font-family:'Lobster', cursive;
+}
 /*Header */
 
-header{background:url(Assets/1.jpg);
-
+header{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Assets/1.jpg);
   background-repeat:no-repeat;
-
   background-position:  center center;
-
   background-size:cover;
-
   background-attachment:fixed;
-
   height:85vh;
-
  
-
 }
-
 /*Nav*/
 
 .logo{
-
   width:100px;
-
   height:80px;
-
 }
-
 .btn-focus,btn-focus:focus{
-
   outline:none! important;
-
   box-shadow:none!important;
-
   
+}
+.intro{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+ 
+}
+.txt{
+   position:absolute;
+  top:57%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-transform:uppercase;
+}
+.wave{
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+
+.nm{
+  
+  
+ text-decoration-style:wavy;
+ color:#2f5a65;
 
 }
 
+@media only screen and (min-width:980px){
+   .container .intro{
+     font-size:45px;
+   }
+ .container .intro .m{
+    display:inline-block;
+  }
+  .txt{
+    top:53%;
+    font-size:35px;
+  
+  }
+}
