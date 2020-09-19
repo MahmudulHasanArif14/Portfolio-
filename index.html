@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
   <meta name="author" content="Arif" />
   
   <meta name="description" content="Welcome to my portfolio.I am Arif.I am a student besides i am learning the web development" />
  <!--GOOGLE FONT-->
  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
 
   <!--FAVICON ICON-->
 
@@ -20,11 +20,20 @@
 
   <!--CUSTOM STYLESHEET-->
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-
+ <!--RESPONSIVE CSS-->
+ <link rel="stylesheet" href="responsive.css" title="responsive " type="text/css" />
  <!--BOOTSTRAP JS-->
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<!--Gsap script-->
+   <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+
 
 
 
@@ -32,7 +41,7 @@
   <script src="main.js" type="text/javascript" charset="utf-8"></script>
 
 
-  <title>Welcome to my profile</title>
+  <title>Āríf,portfolio site</title>
 </head>
 <body>
 
@@ -78,8 +87,22 @@
    
   </div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave"><path fill="#ffffff" fill-opacity="1" d="M0,160L1440,32L1440,320L0,320Z"></path></svg>  
-</header>
-
+ </header>
+   <div class="intro-animated">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Welcome  To</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">&nbsp;&nbsp; My</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">portfolio.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+  
   <!---!HEADER SECTION-->
 
   <!--MAIN SECTION-->
@@ -96,10 +119,24 @@
   <!--!MAIN SECTION-->
 
   <!--FOOTER SECTION-->
-  <footer id="">
-
+  <footer id="footer" class="bg-dark">
+    <div class="footer text-center p-4 text-light">
+      &copy; Copyright by
+    </div>
   </footer>
   <!--!FOOTER SECTION-->
+ <script type="text/javascript" charset="utf-8">
+  const tl=gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text",{y: "0%", duration:2, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay:.5 });
+tl.to(".intro-animated", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".intro", { opacity: 0 }, { opacity: 1, duration:2 }, "-=1");
+tl.fromTo(".txt",{opacity:0},{opacity:1, duration:2});
+
+
+</script>
 
 </body>
 </html>
