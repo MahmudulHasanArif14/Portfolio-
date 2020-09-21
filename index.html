@@ -16,26 +16,32 @@
 
   <link rel="shortcut icon" href="Assets/fav.png" type="image/x-icon" />
  <!--BOOTSTRAP CSS-->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+<!--AOS CSS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
   <!--CUSTOM STYLESHEET-->
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
  <!--RESPONSIVE CSS-->
  <link rel="stylesheet" href="responsive.css" title="responsive " type="text/css" />
+ 
  <!--BOOTSTRAP JS-->
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+ <!-- JavaScript and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  
 <!--Gsap script-->
    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-
-
-
+<!--AOS JS-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
 
   <!--CUSTOM JS-->
   <script src="main.js" type="text/javascript" charset="utf-8"></script>
@@ -108,8 +114,8 @@
   <!--MAIN SECTION-->
   <main id="About">
   <div class="container">
-    <p class="lead  text-center m-5">Lorem ipsum dolor sit amet adipisicing elit do tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
-    <img src="Assets/profile.jpg" alt="profile" class="img-fluid"/>
+    <p class="lead  text-center m-5" data-aos="fade-in" >Lorem ipsum dolor sit amet adipisicing elit do tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+    <img src="Assets/profile.jpg" alt="profile" class="img-fluid" data-aos="fade-right"/>
   <h2>A little about me.</h2>
 					<p class="lead">I am <ins class="nm">Mahmudul Hasan Arif.</ins> Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody.</p>
   </div>
@@ -135,6 +141,11 @@ tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo(".intro", { opacity: 0 }, { opacity: 1, duration:2 }, "-=1");
 tl.fromTo(".txt",{opacity:0},{opacity:1, duration:2});
 
+AOS.init({
+  offset:200,
+  duration:2000
+  
+});
 
 </script>
 
