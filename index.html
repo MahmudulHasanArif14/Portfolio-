@@ -32,14 +32,13 @@
  <!--RESPONSIVE CSS-->
  <link rel="stylesheet" href="responsive.css" title="responsive " type="text/css" />
  <!--Jquary -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
   
  <!--BOOTSTRAP JS-->
  <!-- JavaScript and dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!--Gsap script-->
    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
@@ -86,7 +85,7 @@
         <a class="nav-link text-light font-20" href="#">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light font-20" href="#">Contact</a>
+        <a class="nav-link text-light font-20" href="#contact">Contact</a>
       </li>
     </ul>
    
@@ -96,7 +95,7 @@
   <div class="container">
     <h1 class="text-light font-20 intro">Mahmudul Hasan <p class="text-center m">Arif</p></h1>
     
-    <p class="text-center text-light txt font-20">Desiger.Developer</p>
+    <p class="text-center text-light txt font-20 font-lobster">Desiger.Developer</p>
    
   </div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave"><path fill="#ffffff" fill-opacity="1" d="M0,160L1440,32L1440,320L0,320Z"></path></svg>  
@@ -133,22 +132,24 @@
    <h3 class=" text-center font-lobster">
      My Skills
    </h3>
+  
+  
    <div class="skills">
 
       <div class="skill">
 
         <div class="skill-name font-rale">HTML<i class="fab fa-html5 "></i></div>
         <div class="skill-bar">
-          <div class="skill-per" per="98"></div>
+          <div class="skill-per" per="90"></div>
         </div>
       </div>
 
       <div class="skill">
-        <div class="skill-name font-rale">CSS
-        <i class="fab fa-css3-alt"></i>
-        </div>
+        <div class="skill-name font-rale">CSS <i class="fab fa-css3-alt"></i>
+       </div>
         <div class="skill-bar">
-          <div class="skill-per" per="80"></div>
+          <div class="skill-per" per="70">
+          </div>
         </div>
       </div>
 
@@ -159,8 +160,9 @@
           <div class="skill-per" per="60"></div>
         </div>
       </div>
-       <div class="skill">
-        <div class="skill-name font-rale">php<i class="fab fa-php"></i></div>
+      
+        <div class="skill">
+        <div class="skill-name font-rale">Php<i class="fab fa-php"></i></div>
         <div class="skill-bar">
           <div class="skill-per" per="60"></div>
         </div>
@@ -168,6 +170,8 @@
     
     </div>
 
+  
+  
    
  </div>
  
@@ -197,7 +201,7 @@
       </div>
       
       
-         <div class="col-md-4 " data-aos="fade-in" data-aos-delay="4000">
+         <div class="col-md-4 " data-aos="fade-in">
          <div class="border  border-secondary bg-white service-item">
         <div class="section-icon text-center">
          <i class="fa fa-camera"></i>
@@ -212,7 +216,7 @@
       </div>
      
       
-       <div class="col-md-4 " data-aos="fade-in" data-aos-delay="5000">
+       <div class="col-md-4 " data-aos="fade-in">
            <div class="border border-secondary bg-white service-item" >
         <div class="section-icon text-center">
      <i class="fab fa-codepen"></i>   </div>
@@ -230,7 +234,36 @@
    </div>
  </section>
  <!--!Offer SECTION-->
+<!--Contact Item -->
+<section class="contact bg-dark text-white py-5" id="contact">
+  <div class="container">
+    <h3 class="text-center font-lobster">
+      Contact With Me
+    </h3>
+       <form action="https://formspree.io/aa6845355@gmail.com" class="form-inline" method="post">
+   <div class="row">
+     <div class="col-md-6 col-lg-6 col-xl-6 ">
+       <input type="email" class="form-control mb-3" name="email" id="Email" placeholder="@gmail.com" required/>
+     </div>
+      <div class="col-md-6 col-lg-6 col-xl-6 ">
+       <input type="text" class="form-control mb-3" name="Name" value="Enter your Name" required/>
+     </div>
+     
+   
+   </div>
+   <textarea name="Message" id="Message" rows="8" cols="30" class="form-control mb-3">
+     Your Message
+   </textarea>
+   <button class="btn btn-primary">Submit</button>
+   
+   
+    </form>
  
+  </div>
+  
+   
+</section>
+<!-- !Contact -->
   </main>
 
   <!--!MAIN SECTION-->
@@ -238,8 +271,8 @@
   <!--FOOTER SECTION-->
   <footer id="footer" class="bg-dark">
     <div class="footer text-center p-4 text-light">
-      &copy; Copyright by
-    </div>
+     <p>Copyright &copy; M H Rīf 2020, All rights Reserved.</p>
+       <span>Created by Rīf  </span>  </div>
   </footer>
   <!--!FOOTER SECTION-->
  <script type="text/javascript" charset="utf-8">
@@ -254,11 +287,32 @@ tl.fromTo(".txt",{opacity:0},{opacity:1, duration:2});
 
 AOS.init({
   offset:200,
-  duration:2000
+  duration:2000,
+  
   
 });
 
+ 
 </script>
 
+ <script>
+
+      $('.skill-per').each(function(){
+
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
+  
 </body>
 </html>
