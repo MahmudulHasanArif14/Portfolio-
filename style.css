@@ -5,6 +5,7 @@ html{
   width:100%;
  font-size:100%;
  overflow-x:hidden;
+ scroll-behavior: smooth;
  }
 /*REUSEABLE COMPONENTS*/
 
@@ -40,9 +41,16 @@ html{
 .font-peddana{
    font-family: 'Peddana', serif;
 }
+.fix{
+	overflow: hidden;
+}
+.stitle {
+	text-align: center;
+}
+
 /*Header */
-header{
- 
+.header-btn a{
+ font-weight:700;
   
 }
 
@@ -82,21 +90,6 @@ header{
 video{
   width:100%;
 }
-.intro{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
- 
-}
-.txt{
-   position:absolute;
-  top:57%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  text-transform:uppercase;
-}
-
 
 .intro-animated{
   background:#000000;
@@ -110,9 +103,24 @@ video{
   align-items:center;
   z-index:9999;
   }
-  
+
+.intro-animated .intro-text{
+  color:rgba(157,231,244,0.855);
+  font-family: 'Raleway', sans-serif;
+  font-size:3rem;
+  font-weight:bold;
+  z-index:1;
+ }
+
+.intro-animated .intro-text .txt{
+   position:absolute;
+  top:57%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-transform:uppercase;
+}
 .slider{
-  background:#2e2298ab;
+  background:#36229894;
   position:fixed;
   top:0;
   left:0;
@@ -122,16 +130,6 @@ video{
   z-index:999999;
   
 }
-
-
-.intro-text{
-  color:rgba(157,231,244,0.855);
-  font-family: 'Raleway', sans-serif;
-  font-size:3rem;
-  font-weight:bold;
-  
- }
-
 .hide{
   background:black;
   overflow:hidden;
@@ -222,4 +220,67 @@ i{
   font-size:30px;
  
   
+}
+
+/* ====================
+  Resumes Section
+=======================*/
+.resume-item {
+	margin-bottom: 65px;
+}
+
+.resume-item h2 {
+	font-size:15px;
+	}
+
+.resume-item .resume-left{
+	text-align: right;
+}
+
+.resume-item .resume-left div{
+	padding-right: 100px;
+}
+
+.resume-item .resume-left p{
+	font-size: 12px;
+}
+
+.resume-item .resume-right {
+	position: relative;
+}
+
+.resume-item .resume-right h2{
+	margin-bottom: 20px;
+}
+
+.resume-item .resume-right h2:after {
+	position: absolute;
+	content: "";
+	width: 16px;
+	height: 16px;
+	left: -52px;
+	top: 0;
+	background:#fff;
+	border: 3px solid;
+	border-radius: 25px;
+	z-index: 1;
+}
+
+.resume-item .resume-right:after {
+	position: absolute;
+	content: "";
+	width:1px;
+	height: calc(100% + 65px);
+	left:-45px;
+	top:0;
+	background:blue;
+	opacity: .5;
+}
+
+.resume-item:last-child {
+	margin-bottom: 0;
+}
+
+.resume-item:last-child .resume-right:after {
+	height: 0;
 }
