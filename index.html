@@ -80,6 +80,10 @@
           <a class="nav-link" href="#Services">Services </a>
         </li>
       
+       <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+      
       </ul>
   </div>
     <!--!Navbar item--> 
@@ -95,7 +99,7 @@
    
     <!---Contact Button-->
      <button class="btn header-btn">
-       <a href="#" class="text-uppercase font-12 font-rale">Click to Contract</a>
+       <a href="#" class="text-uppercase font-12 font-popin">Click to Contract</a>
        </button>
         <!--!Contact Button-->
     </div>
@@ -127,14 +131,19 @@
     <!--MAIN SECTION-->
   <main>
     
-  <div class="container" id="About">
+    <!--ABOUT SECTION-->
+   <section class="about" id="About">
+     <div class="container" >
     <p class="lead  text-center m-5" data-aos="fade-in" >This website is work in progress more features and activities of my work will be added soon.</p>
     <img src="Assets/profile.jpg" alt="profile" class="img-fluid" data-aos="fade-right"/>
-  <h1>A little about me.</h1>
+  <h1 class="font-lobster font-18">A Little Bit About Me.</h1>
 					<p class="lead">I am <ins class="nm">Mahmudul Hasan Arif.</ins>I am a Student.I am learning how the website features are build.I never lose my hopes because I know after hard work their must be exist the reward for the work. </p>
   </div>
   
+   </section> 
   
+  <!--ABOUT SECTION-->
+ 
  <!--Skill SECTION-->
  <section class="bg-skill text-light pb-3" data-aos="fade-in" id="Skills">
    
@@ -244,16 +253,63 @@
      </div>
    </div>
  </section>
- <!--!Offer SECTION-->
+ <!--!SERVICE SECTION-->
  
  
  
  
- <!--My Experience SECTION-->
- <div class="container">
-   
- </div>
- 
+ <!-- ==== Resume Section Start ==== -->
+	<section class="resume-section fix" id="resume">
+		<div class="container p-5">
+			<div class="stitle mb-4">
+				<h2 class="font-lobster ">My Experience</h2>
+			</div>
+			<div class="row">
+				<!-- Resume Item -->
+				<div class="col-md-offset-1 col-md-10">
+					<div class="resume-item row">
+						<div class="col-md-4 col-sm-4 resume-left wow fadeInUp" data-wow-delay="0.15s">
+							<div>
+								<h2 class="font-rale">2 years</h2>
+								<p class="font-rale">2015-2017</p>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-8 resume-right">
+							<h2 class="font-lobster">Art & Creative director</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<!-- Resume Item -->
+					<div class="resume-item row">
+						<div class="col-md-4 col-sm-4 resume-left wow fadeInUp" data-wow-delay="0.15s">
+							<div>
+								<h2 class="font-rale">3 years</h2>
+								<p class="font-rale">2012-2015</p>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-8 resume-right">
+							<h2 class="font-lobster">Web designer & developer</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, sit augue theophrastus ex. Nec ne dicam impedit perpetua, legimus fierent molestiae ei nec. Eum ei adhuc meliore pericula.At agam omittam accumsan mel.</p>
+						</div>
+					</div>
+					<!-- Resume Item -->
+					<div class="resume-item row">
+						<div class="col-md-4 col-sm-4 resume-left wow fadeInUp" data-wow-delay="0.15s">
+							<div>
+								<h2 class="font-rale">1 years</h2>
+								<p class="font-rale">2011-2012</p>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-8 resume-right">
+							<h2 class="font-lobster">Mid-level designer</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==== Resume Section End ==== -->
  
  
  
@@ -332,8 +388,7 @@ tl.to(".text",{y: "0%", duration:2, stagger: 0.25 });
 tl.to(".slider", { y: "-100%", duration: 1.5, delay:.5 });
 tl.to(".intro-animated", { y: "-100%", duration: 1 }, "-=1");
 tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration:.5});
-tl.fromTo(".intro", { opacity: 0 }, { opacity: 1, duration:2 }, "-=1");
-tl.fromTo(".txt",{opacity:0},{opacity:1, duration:2});
+
 
 AOS.init({
   offset:200,
