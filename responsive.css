@@ -8,8 +8,8 @@
   
   }
  .header-btn{
-   left:41%;
-   top:90%;
+   left:auto;
+   top:auto;
    
  }
 
@@ -34,8 +34,8 @@
     font-size:5px;
   }
   .header-btn {
-   left:90%;
-   top:41%;
+ left:auto;
+   top:auto;
  }
    
 }
