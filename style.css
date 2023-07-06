@@ -65,27 +65,9 @@ html{
   box-shadow:none!important;
   
 }
-  .header-btn{
-  position:absolute;
-  top:28%;
-  left:40%;
-  background:linear-gradient(180deg, rgba(164,59,211,0.739),linear-gradient(#f463ec));
-  border:1px solid #cb00ff;
-  border-radius:50px;
- 
-}
-.header-btn:hover {
-  background:rgba(183,93,222,0.752);
-  border-color:none;
-  outline:none!important;
-   box-shadow:none!important;
- 
-}
-.header-btn a{
-  text-decoration:none;
-  color:#e8f9fde6;
-  
-}
+
+
+
 /*VIDEO*/
 video{
   width:100%;
